@@ -1,0 +1,134 @@
+.header {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 30px;
+}
+.header .search {
+  border: 2px solid #000000;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header .search input {
+  width: 100px;
+  background: #EBEBEB;
+  border-radius: 25px;
+  border: none;
+  width: 80%;
+  height: 35px;
+  padding-left: 10px;
+}
+.header .search ::placeholder {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 23px;
+  color: black;
+}
+.header .form {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  border: 2px solid #000000;
+  box-sizing: border-box;
+  border-radius: 15px;
+}
+.header .form form {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px;
+}
+.header .form form .input {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.header .form form .input .field + .field {
+  margin: 0 20px;
+}
+.header .form form .input .field input {
+  background: #EBEBEB;
+  border-radius: 25px;
+  border: none;
+  width: 120px;
+  height: 35px;
+  padding-left: 10px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 23px;
+  color: black;
+}
+.header .form form .input ::placeholder {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 23px;
+  color: black;
+}
+.header .form form #button {
+  height: 35px;
+  width: 150px;
+  background: #68f10d;
+  border-radius: 25px;
+  border: none;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 23px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+#cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 50px;
+  grid-auto-flow: 100px;
+  justify-content: space-between;
+  grid-row-gap: 30px;
+  margin: 30px 0;
+}
+#cards .empty_info {
+  font-size: 30px;
+  text-align: center;
+}
+
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: 250px;
+  border-radius: 20px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 50px;
+  line-height: 59px;
+}
+
+.close {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background-color: #f50a0a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 25px;
+  border-radius: 50%;
+  top: -15px;
+  right: -15px;
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=style.css.map */
